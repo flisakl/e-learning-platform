@@ -1,0 +1,17 @@
+application:
+  name: users
+  version: 1.0
+  title: Users
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/users
+    username: admin
+    password: admin
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: none
+  sql:
+    init:
+      mode: always
+      schema-locations: classpath:schema.sql
